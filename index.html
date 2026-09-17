@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="poster">
@@ -17,7 +17,7 @@
 
     <!-- Logo / banner oficial del evento -->
     <div class="logo-wrap">
-      <img src="logo-evento.jpg" alt="Semana de la Juventud · MJ Empoderados para Testificar 2026 · Jóvenes COGOP Perú · IDP Zapallal Bajo">
+      <img src="assets/logo-evento.jpg" alt="Semana de la Juventud · MJ Empoderados para Testificar 2026 · Jóvenes COGOP Perú · IDP Zapallal Bajo">
     </div>
 
     <div class="sticker">
@@ -130,16 +130,12 @@
       </svg>
     </div>
 
-    <!-- Confirmar asistencia: el número sale de un contador real y compartido (ver js/script.js) -->
+    <!-- Confirmar asistencia: cambia de estado y lanza confeti (ver js/script.js) -->
     <div class="rsvp">
       <button type="button" class="rsvp-btn" id="rsvpBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
         <span>Confirmar mi asistencia</span>
       </button>
-      <div class="rsvp-count">
-        <strong id="rsvpCountValue">…</strong>
-        <span>jóvenes ya confirmaron</span>
-      </div>
       <div class="rsvp-note" id="rsvpNote">Toca para avisar que vienes.</div>
     </div>
 
@@ -153,6 +149,6 @@
     </footer>
   </div>
 
-  <script src="scripts.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
