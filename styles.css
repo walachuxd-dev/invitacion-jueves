@@ -303,21 +303,6 @@ body{
   color:#062a1c;
 }
 
-.rsvp-count{
-  margin-top:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  font-size:.85rem;
-  color: rgba(244,240,255,.85);
-}
-.rsvp-count strong{
-  font-family:'Anton', sans-serif;
-  font-size:1.15rem;
-  color: var(--gold);
-}
-
 .rsvp-note{
   margin-top:8px;
   font-size:.76rem;
@@ -326,6 +311,20 @@ body{
 }
 .rsvp-note.on{ color: var(--cyan); font-weight:600; }
 .rsvp-note.error{ color: #ff9d9d; }
+
+/* ---- Confeti al confirmar ---- */
+.confetti-piece{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform, opacity;
+  transition: transform 900ms cubic-bezier(.25,.8,.3,1), opacity 900ms ease-out;
+}
 
 footer{
   position:relative;
@@ -357,6 +356,11 @@ footer{
   border:1px solid rgba(255,255,255,.2);
 }
 .socials svg{ width:14px; height:14px; fill:#fff; }
+
+@media (max-width:380px){
+  .day{ font-size:2.8rem; }
+  .theme{ font-size:1.25rem; }
+}
 
 @media (max-width:380px){
   .day{ font-size:2.8rem; }
